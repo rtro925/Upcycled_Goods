@@ -92,10 +92,7 @@ function Images({ selectedProduct, setShowProductForm, getData }) {
           Cancel
         </Button>
 
-        {/* <Button type="primary" disabled={!file} onClick={upload}>
-          Upload
-        </Button> */}
-        <Button type="primary" disabled={!file} onClick={upload} style={{ background: "maroon" }}>
+        <Button type="primary" disabled={!file} onClick={upload}>
           Upload
         </Button>
 
