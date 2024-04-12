@@ -83,7 +83,7 @@ function ProtectedPage({ children }) {
             UPCYCLED GOODS
           </h1>
 
-          <div className="bg-white py-2 px-5 rounded flex gap-1 items-center">
+          <div className="bg-white p-3  rounded flex items-center">
             <span
               className="underline cursor-pointer uppercase"
               onClick={() => {
@@ -97,6 +97,7 @@ function ProtectedPage({ children }) {
               {user.name}
             </span>
             <Badge
+            
               count={
                 notifications?.filter((notification) => !notification.read)
                   .length
@@ -105,7 +106,7 @@ function ProtectedPage({ children }) {
                 readNotifications();
                 setShowNotifications(true);
               }}
-              className="cursor-pointer"
+              className="cursor-pointer ml-2"
             >
               <Avatar
                 shape="circle"
@@ -113,7 +114,7 @@ function ProtectedPage({ children }) {
               />
             </Badge>
             <i
-              className="ri-logout-box-r-line ml-10"
+              className="ri-logout-box-r-line ml-2"
               onClick={() => {
                 localStorage.removeItem("token");
                 navigate("/login");

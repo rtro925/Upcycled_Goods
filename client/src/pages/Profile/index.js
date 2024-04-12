@@ -12,9 +12,7 @@ function Profile() {
             <Tabs.TabPane tab="Bids" key="2">
                 <h1>Bids</h1>
             </Tabs.TabPane>
-            <Tabs.TabPane tab="General" key="3">
-                <h1>General</h1>
-            </Tabs.TabPane>
+            
         </Tabs>
     </div>
   )

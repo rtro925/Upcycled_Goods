@@ -76,8 +76,10 @@ function ProductInfo() {
             <div>
               <h1 className="text-gray-600">Added On</h1>
               <span className="text-gray-600">
+                
                 {moment(product.createdAt).format("MMM D , YYYY hh:mm A")}
               </span>
+              <p className="mt-6 text-[maroon]">Note: If your item is listed on Upcycled Goods for more than a year then it will be deleted and need to be relisted </p>
             </div>
           </div>
 
@@ -174,6 +176,7 @@ function ProductInfo() {
                           {" "}
                           {moment(bid.createdAt).format("MMM D , YYYY hh:mm A")}
                         </span>
+                        
                       </div>
                     </div>
                   );
